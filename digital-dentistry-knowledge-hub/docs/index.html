@@ -1,6 +1,122 @@
-digital-dentistry-knowledge-hub/
-├── README.md
-├── learning-notes/
-│   └── digital-denture-workflow.md
-└── docs/
-    └── index.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Milling vs 3D Printing | Digital Dentistry Research</title>
+<style>
+:root{--ink:#20312f;--muted:#63736f;--accent:#267568;--line:#dce5e1;--paper:#fff;--bg:#f3f6f4}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:Arial,Helvetica,sans-serif;line-height:1.75}
+header{background:#203b36;color:white;padding:64px 24px}
+.hero{max-width:900px;margin:auto}
+.kicker{text-transform:uppercase;letter-spacing:2px;font-size:12px;color:#b7d9ce}
+h1{font-family:Georgia,serif;font-size:clamp(34px,6vw,54px);line-height:1.15;font-weight:500;margin:18px 0}
+.subtitle{font-size:18px;color:#d6e5df;max-width:720px}
+.meta{font-size:13px;color:#b7d9ce;margin-top:26px}
+nav{background:white;border-bottom:1px solid var(--line);padding:12px 24px}
+.navinner{max-width:900px;margin:auto;display:flex;gap:20px;flex-wrap:wrap}
+nav a{color:var(--accent);font-size:13px;text-decoration:none}
+main{max-width:900px;margin:36px auto;padding:0 22px}
+article{background:var(--paper);border:1px solid var(--line);border-radius:8px;padding:clamp(22px,5vw,48px)}
+section{margin-bottom:38px;scroll-margin-top:20px}
+h2{font-family:Georgia,serif;font-weight:500;font-size:28px;border-bottom:1px solid var(--line);padding-bottom:10px}
+h3{font-size:18px;margin-top:24px}
+p,li{color:#394b47}
+.abstract{background:#f1f6f3;border-left:4px solid var(--accent);padding:20px 24px}
+.label{font-size:12px;text-transform:uppercase;letter-spacing:1.5px;color:var(--accent);font-weight:bold}
+table{width:100%;border-collapse:collapse;font-size:14px;margin:20px 0}
+th,td{text-align:left;vertical-align:top;padding:12px;border-bottom:1px solid var(--line)}
+th{background:#edf3ef}
+.note{font-size:13px;color:var(--muted)}
+footer{text-align:center;padding:30px;color:var(--muted);font-size:13px}
+a{color:var(--accent)}
+@media(max-width:600px){header{padding:42px 20px}table{font-size:12px}th,td{padding:8px}}
+</style>
+</head>
+<body>
+<header>
+<div class="hero">
+<div class="kicker">Digital Dentistry · Research Notes</div>
+<h1>Milling vs 3D Printing in Digital Denture Fabrication</h1>
+<p class="subtitle">A technical review of mechanical performance, long-term durability, repairability, and workflow efficiency.</p>
+<div class="meta">INDEPENDENT LEARNING PROJECT · DIGITAL DENTISTRY KNOWLEDGE HUB</div>
+</div>
+</header>
+<nav><div class="navinner">
+<a href="#abstract">Abstract</a><a href="#background">Background</a><a href="#materials">Materials & Strength</a><a href="#repair">Repairability</a><a href="#workflow">Workflow</a><a href="#questions">Research Questions</a><a href="#references">References</a>
+</div></nav>
+<main><article>
+<section id="abstract">
+<div class="label">Overview</div><h2>Abstract</h2>
+<div class="abstract"><p>Digital denture fabrication increasingly uses subtractive manufacturing (milling) and additive manufacturing (3D printing). Both approaches can support digital workflows, but their performance depends on the material, manufacturing parameters, post-processing, denture design, and clinical protocol.</p><p>This review outlines key questions about mechanical strength, long-term durability, repair and relining, production efficiency, and patient choice. These questions require evaluation against peer-reviewed evidence rather than assumptions based on manufacturing method alone.</p></div>
+<p><strong>Keywords:</strong> digital dentures, CAD/CAM, milling, 3D printing, flexural strength, durability, relining, workflow efficiency.</p>
+</section>
+<section id="background">
+<h2>1. Background</h2>
+<p>Digital denture workflows may include digital impressions or laboratory scanning, CAD design, and manufacturing by milling or 3D printing. The choice of workflow can affect material selection, equipment requirements, processing steps, and laboratory organisation.</p>
+<p>In my experience with both milling and printing, the central question is not simply which method is faster. The priority is to achieve consistent quality, accuracy, fit, and reliable long-term performance while maintaining an efficient workflow.</p>
+</section>
+<section id="materials">
+<h2>2. Mechanical Properties and Durability</h2>
+<h3>2.1 Milling and subtractive manufacturing</h3>
+<p>Milled dentures are produced by machining a pre-polymerised material blank. The properties of the blank, its composition, the milling strategy, tool condition, and the final geometry may all influence the finished prosthesis.</p>
+<h3>2.2 3D printing and additive manufacturing</h3>
+<p>Printed dentures are built layer by layer using a material and process validated for the intended dental application. Print orientation, layer settings, washing, post-curing, and ageing may influence mechanical performance.</p>
+<h3>2.3 What should be compared?</h3>
+<table><thead><tr><th>Property</th><th>Why it matters</th><th>Evidence to look for</th></tr></thead><tbody>
+<tr><td>Flexural strength</td><td>Resistance to bending under load</td><td>Comparable test methods and material types</td></tr>
+<tr><td>Fracture resistance</td><td>Resistance to cracking or catastrophic failure</td><td>Standardised fracture tests and failure modes</td></tr>
+<tr><td>Fatigue resistance</td><td>Performance under repeated loading</td><td>Cyclic loading and ageing studies</td></tr>
+<tr><td>Dimensional accuracy</td><td>Fit and shape reproducibility</td><td>Validated measurement methods and clinical relevance</td></tr>
+<tr><td>Water ageing</td><td>Potential changes over time in an oral environment</td><td>Water storage, thermocycling, and long-term studies</td></tr>
+</tbody></table>
+<p class="note">Important: avoid concluding that all milled materials are stronger than all printed materials. Comparisons should account for the specific material, product indication, specimen design, and processing protocol.</p>
+</section>
+<section id="repair">
+<h2>3. Relining, Rebasing, and Repairability</h2>
+<p>A practical question is whether a printed denture can be relined or rebased later using an appropriate resin, and whether the bond remains reliable over time.</p>
+<ul><li>Identify the denture-base material and the approved repair or reline protocol.</li><li>Examine surface preparation, bonding agents, and resin compatibility.</li><li>Compare bond strength before and after water ageing or thermal cycling.</li><li>Check manufacturer instructions and clinical evidence before applying a protocol.</li></ul>
+<p>Repairability should be assessed for each validated material system. It should not be assumed that one protocol is suitable for every printed or milled denture.</p>
+</section>
+<section id="workflow">
+<h2>4. Workflow and Production Efficiency</h2>
+<p>Manufacturing time alone does not represent total production efficiency. A meaningful comparison should include the complete process from design to a finished, quality-checked prosthesis.</p>
+<table><thead><tr><th>Workflow factor</th><th>Questions to evaluate</th></tr></thead><tbody>
+<tr><td>Preparation</td><td>How much design and setup time is required?</td></tr>
+<tr><td>Machine time</td><td>How long does manufacturing take for a comparable case?</td></tr>
+<tr><td>Post-processing</td><td>What washing, curing, finishing, or polishing steps are needed?</td></tr>
+<tr><td>Labour</td><td>How much technician time is required, including rework?</td></tr>
+<tr><td>Quality control</td><td>What checks are needed to confirm fit, accuracy, and surface quality?</td></tr>
+<tr><td>Cost</td><td>What are the material, equipment, maintenance, and failure costs?</td></tr>
+</tbody></table>
+<p>A fair workflow comparison should use similar case types and report both total turnaround time and active technician labour. The best choice may differ by laboratory volume, equipment, material system, and case complexity.</p>
+</section>
+<section id="questions">
+<h2>5. Research Questions and Personal Reflection</h2>
+<ol>
+<li>How do the flexural strength, fracture resistance, and fatigue behaviour of printed and milled denture-base materials compare when tested under comparable conditions?</li>
+<li>How do water ageing and thermal cycling affect their long-term mechanical properties?</li>
+<li>What evidence supports the long-term reliability of relining, rebasing, and repair protocols for printed denture bases?</li>
+<li>How much does milling-tool wear or machining strategy influence surface quality, accuracy, and material integrity?</li>
+<li>When clinical fit and patient satisfaction are comparable, could patients be offered a choice between manufacturing methods based on cost, turnaround time, repairability, and clinician recommendations?</li>
+<li>Which workflow provides the best balance of quality, total production time, and cost for different types of denture cases?</li>
+</ol>
+<h3>Working position</h3>
+<p>My current priority is quality and accuracy. I do not assume that either method is universally superior. I aim to compare specific material systems and validated workflows using published evidence, then consider how those findings apply to everyday dental laboratory practice.</p>
+</section>
+<section id="method">
+<h2>6. Proposed Review Method</h2>
+<p>To keep the review reproducible, I would search peer-reviewed dental materials and prosthodontic literature using combinations of terms such as “3D printed denture base,” “milled denture base,” “flexural strength,” “fatigue,” “water ageing,” “reline bond strength,” and “digital denture workflow.”</p>
+<p>For each relevant study, record the material and manufacturer, sample preparation, post-processing protocol, test method, ageing conditions, main results, and limitations. Avoid directly comparing numerical results from studies that use substantially different methods without acknowledging those differences.</p>
+</section>
+<section id="references">
+<h2>7. References</h2>
+<p>References will be added after the literature search and verification of each source.</p>
+<ul><li>Prioritise peer-reviewed studies and systematic reviews in dental materials and prosthodontics.</li><li>Use manufacturer instructions for material-specific processing and repair protocols, clearly distinguishing these from independent clinical evidence.</li><li>Record complete bibliographic details and DOI or stable links for every cited study.</li></ul>
+<p class="note">This page is an educational research project, not clinical guidance. Material selection and clinical procedures should follow validated product instructions and professional judgement.</p>
+</section>
+</article></main>
+<footer>Digital Dentistry Knowledge Hub · Research and learning in digital dental technology</footer>
+</body>
+</html>
